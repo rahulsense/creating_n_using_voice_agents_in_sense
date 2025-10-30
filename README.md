@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide provides step-by-step instructions for creating and deploying voice agents for post-application candidate screening. You'll learn how to configure a Retell AI voice agent, import it into the Sense platform, and set up automated **Submittal Workflows** (workflows that trigger when a candidate applies to a job) for candidate interaction.
+This given guide provides step-by-step instructions for creating and deploying voice agents for post-application candidate screening. You'll learn how to configure a Retell AI voice agent, import it into the Sense platform, and set up automated **Submittal Workflows** (workflows that trigger when a candidate applies to a job) for candidate interaction.
 
 ### Prerequisites
 
