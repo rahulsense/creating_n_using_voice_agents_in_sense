@@ -155,6 +155,8 @@ Enables candidates to reschedule the screening call.
 
 ## 2. Importing Voice Agent to Sense
 
+We are doing this step so that the voice bot we just created in retell is available in multientity to test out (basically putting ourselves into the shoes of our customers).
+
 ### 2.1 Connect to VPN
 
 <img width="856" height="548" alt="image" src="https://github.com/user-attachments/assets/7da90186-a715-4405-8364-9161e1c872c4" />
