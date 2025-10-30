@@ -157,7 +157,7 @@ Enables candidates to reschedule the screening call.
 
 ### 2.1 Connect to VPN
 
-<img width="3456" height="1882" alt="image" src="https://github.com/user-attachments/assets/5cf5c3e8-da46-4439-91ea-5a9b085ddbb8" />
+<img width="856" height="548" alt="image" src="https://github.com/user-attachments/assets/7da90186-a715-4405-8364-9161e1c872c4" />
 
 > ⚠️ **Required:** Connect to AWS VPN before proceeding.
 
@@ -326,8 +326,8 @@ Navigate to [Automation Workflows](https://multientity.sensehq.com/automation-wo
 
 1. Click the **+** button below the trigger
 2. Select **Voice Flow**'
-   
-<img width="3456" height="902" alt="image" src="https://github.com/user-attachments/assets/ced158dc-878c-47a1-9bf5-0b7db9da19e7" />
+
+<img width="3456" height="1910" alt="image" src="https://github.com/user-attachments/assets/b52571a2-a584-4700-b7ae-d963d7065214" />
 
 3. Choose your imported Retell voice bot from the dropdown
 
@@ -342,7 +342,7 @@ Map the following variables for the voice call:
 | Call To | `candidate/phone` |
 | Recipient Name | `candidate/first_name` |
 
-<img width="3456" height="1242" alt="image" src="https://github.com/user-attachments/assets/f03dc880-5f99-471b-a1c8-bd99bb6291ae" />
+<img width="3456" height="902" alt="image" src="https://github.com/user-attachments/assets/ced158dc-878c-47a1-9bf5-0b7db9da19e7" />
 
 ### 4.6 Activate Workflow
 
