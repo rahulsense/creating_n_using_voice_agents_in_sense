@@ -1,4 +1,4 @@
-# Voice Agent Setup Guide (Submittal Workflow)
+# Creating and using voice agents in Sense
 
 ## Overview
 
