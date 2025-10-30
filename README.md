@@ -28,8 +28,13 @@ Navigate to the [Retell AI Dashboard](https://dashboard.retellai.com).
 
 1. Click **Create Agent**
 2. Select **Voice Agent**
+   
+<img width="3456" height="674" alt="image" src="https://github.com/user-attachments/assets/a9677cbf-2684-46b8-a968-66124080b697" />
+
 3. Choose **Multi-Prompt Agent**
 4. Select **Start from Blank** template
+   
+<img width="3456" height="1910" alt="image" src="https://github.com/user-attachments/assets/e8542c4a-52fa-4194-89b8-b7ae553b4554" />
 
 ### 1.3 Configure Base Settings
 
@@ -39,6 +44,8 @@ Configure the following core settings:
 |---------|-------|-------------|
 | Universal Prompt | Custom prompt text | General instructions for the agent (overarching behavior) |
 | Welcome Message | "AI speaks first" | Recommended for better UX |
+
+<img width="3456" height="1542" alt="image" src="https://github.com/user-attachments/assets/0c633cc5-8bb6-4564-937a-2c96f37f1c59" />
 
 > **Note:** The universal prompt provides high-level guidance, while prompt tree prompts handle specific conversation states.
 
@@ -80,9 +87,7 @@ Asks standardized questions that are **already provided at the time of agent cre
 - Location preferences
 - Willingness to relocate
 
-**Visual Reference:**
-
-![Prompt Tree Configuration](https://github.com/user-attachments/assets/52c3de37-77c1-4ee0-811b-e7ef38271571)
+<img width="3450" height="830" alt="image" src="https://github.com/user-attachments/assets/7cca9e6e-23c3-4b9d-9d41-00ef228befea" />
 
 ### 1.5 Configure Functions
 
@@ -97,6 +102,8 @@ Creates a graceful call termination when the conversation concludes.
 #### Function 2: Reschedule Call
 
 Enables candidates to reschedule the screening call.
+
+<img width="3456" height="1882" alt="image" src="https://github.com/user-attachments/assets/ec471a55-aba6-4b32-8162-2a0781c36602" />
 
 **Configuration Steps:**
 
@@ -150,6 +157,8 @@ Enables candidates to reschedule the screening call.
 
 ### 2.1 Connect to VPN
 
+<img width="3456" height="1882" alt="image" src="https://github.com/user-attachments/assets/5cf5c3e8-da46-4439-91ea-5a9b085ddbb8" />
+
 > ⚠️ **Required:** Connect to AWS VPN before proceeding.
 
 ### 2.2 Access Lowcoder
@@ -162,6 +171,9 @@ Navigate to **Lowcoder** ([Internal Hub](https://internalhub.prod.sensehq.co/app
 
 Complete the import form with the following values:
 
+<img width="3456" height="1912" alt="image" src="https://github.com/user-attachments/assets/47151f24-6ecf-40cc-9ea1-5fa58b14f421" />
+
+
 | Field | Value |
 |-------|-------|
 | Environment | `prod` |
@@ -169,6 +181,8 @@ Complete the import form with the following values:
 | Retell Dashboard Bots | Select your newly created bot |
 | Entity | `bh_job_submission` |
 | Phone Number | Select default phone number |
+
+<img width="3456" height="1908" alt="image" src="https://github.com/user-attachments/assets/ce3b6c5e-86e4-4bd7-8c32-91cdb5823d40" />
 
 Click **Import** to complete the process.
 
@@ -203,7 +217,7 @@ This simulates the real-world scenario where a candidate applies to a job throug
 
 ### 3.1 Create Test Candidate
 
-Execute the following cURL command to create a candidate record.
+Execute the following cURL command to create a candidate record (use Postman).
 
 > **Important:** Update these values before executing:
 > - `external_source_id` (must be unique)
@@ -292,25 +306,29 @@ Navigate to [Automation Workflows](https://multientity.sensehq.com/automation-wo
 1. Click **Create Workflow**
 2. Select **Submittal** as the focus entity
 
-![Create Workflow](https://github.com/user-attachments/assets/a02af061-f8ab-4550-ac35-5bb86828737d)
+<img width="3456" height="1020" alt="image" src="https://github.com/user-attachments/assets/553493ad-e2ee-427c-bae1-c079f44ddaa4" />
 
 ### 4.3 Configure Audience
 
 1. Click **Add Audience List from Scratch**
 
-![Add Audience](https://github.com/user-attachments/assets/b4e9c53c-a0f8-4759-8df3-b5f99276a616)
+<img width="3456" height="794" alt="image" src="https://github.com/user-attachments/assets/d5e2e50e-f76f-42ee-b4e4-dc55ce0c846c" />
 
 2. Under **Add Variable**, add `candidate.id`
 3. Enter the candidate ID created in Step 3.1
 
-> ℹ️ **Note:** This list will contain the submission we created, making it the target audience for this workflow.
+<img width="3456" height="1912" alt="image" src="https://github.com/user-attachments/assets/877fa727-25b5-4153-b20c-1ca07a7214bd" />
+  
 
-![Add Variable](https://github.com/user-attachments/assets/74262ec2-e614-4eb0-95b8-ea6491f17c67)
+> ℹ️ **Note:** This list will contain the submission we created, making it the target audience for this workflow.
 
 ### 4.4 Add Voice Flow Node
 
 1. Click the **+** button below the trigger
-2. Select **Voice Flow**
+2. Select **Voice Flow**'
+   
+<img width="3456" height="902" alt="image" src="https://github.com/user-attachments/assets/ced158dc-878c-47a1-9bf5-0b7db9da19e7" />
+
 3. Choose your imported Retell voice bot from the dropdown
 
 > ℹ️ **Troubleshooting:** If your bot doesn't appear, verify the import in Step 2.
@@ -324,12 +342,15 @@ Map the following variables for the voice call:
 | Call To | `candidate/phone` |
 | Recipient Name | `candidate/first_name` |
 
-![Voice Flow Configuration](https://github.com/user-attachments/assets/fbd5c98f-f64d-4a11-8d35-f28d01399ae5)
+<img width="3456" height="1242" alt="image" src="https://github.com/user-attachments/assets/f03dc880-5f99-471b-a1c8-bd99bb6291ae" />
 
 ### 4.6 Activate Workflow
 
 1. Review your workflow configuration
 2. Click **Activate** to enable the workflow
+   
+<img width="3456" height="1242" alt="image" src="https://github.com/user-attachments/assets/78ea1e68-d754-440e-af27-ca2765d6d60a" />
+
 3. The test call will be initiated to your configured phone number
 
 ---
@@ -381,28 +402,6 @@ Map the following variables for the voice call:
 
 ---
 
-## Best Practices
-
-### Security
-- Never commit API keys to version control
-- Rotate API keys regularly
-- Use environment-specific keys (dev, staging, prod)
-- Maintain VPN connection during sensitive operations
-
-### Testing
-- Always test with non-production phone numbers first
-- Use unique identifiers for each test run
-- Document test scenarios and results
-- Clean up test data after validation
-
-### Maintenance
-- Regularly update universal prompts based on feedback
-- Review call transcripts for optimization opportunities
-- Monitor function execution success rates
-- Keep workflow configurations documented
-
----
-
 ## Appendix
 
 ### API Endpoints Reference
@@ -427,12 +426,4 @@ Map the following variables for the voice call:
 | **Lowcoder** | Open-source project hosted on Sense servers (accessed via Internal Hub domain) |
 | **Dynamic Questions** | Questions generated based on specific job descriptions; criteria provided, not exact questions |
 | **Static Questions** | Predefined questions provided at agent creation time; same across all jobs |
-
----
-
-### Getting Help
-
-- **Technical Issues:** Contact the development team
-- **Workflow Questions:** Refer to [internal documentation portal]
-- **API Support:** Check API documentation at respective endpoint docs
 
