@@ -230,7 +230,7 @@ Execute the following cURL command to create a candidate record (use Postman).
 curl --location 'https://system-me.internal-me.sensehq.co/api/v1/ems/bh_candidate/3384364471276985052/create' \
 --header 'x-sense-app: dummy' \
 --header 'Content-Type: application/json' \
---header 'X-Api-Key: 036e2118-28db-41e8-a755-1fc62a33dfcf' \
+--header 'X-Api-Key: ask' \
 --data-raw '{
   "external_source_type": "bullhorn",
   "external_source_id": "UNIQUE_ID_HERE",
@@ -272,7 +272,7 @@ This step creates the **Submittal** (the application itself), linking your test 
 curl --location 'https://system-me.internal-me.sensehq.co/api/v1/ems/bh_job_submission/3384364471276985052/create' \
 --header 'x-sense-app: dummy' \
 --header 'Content-Type: application/json' \
---header 'X-Api-Key: b9ed9c50-fead-4255-80b8-46c52d015a58' \
+--header 'X-Api-Key: ask' \
 --data '{
   "external_source_type": "bullhorn",
   "external_source_id": "UNIQUE_SUBMISSION_ID",
